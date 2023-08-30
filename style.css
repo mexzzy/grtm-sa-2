@@ -11,7 +11,7 @@ header {
   padding: 10px 10%;
   box-shadow: 1px 1px 5px 3px #8888882d;
 }
-#toggle {
+#toggle, #closeIcon {
   display: none;
 }
 
