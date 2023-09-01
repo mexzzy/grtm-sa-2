@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="login.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
     <title>AfriCash Login</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,19 +12,24 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
   </head>
   <body>
     <div class="wrapper">
       <div class="header">
-        <img src="africash logo.png" alt="" />
+        <img src="logo.png" alt="" />
         <span>Africash</span>
       </div>
       <div class="container">
         <span>LOGIN</span>
         <form id="loginForm" class="miniwrapper">
           <input type="text" id="username" placeholder="Username" />
-          <input type="email" id="email" placeholder="Email" />
-          <input type="password" id="password" placeholder="Password" />
+          <div class="passwordFlex">
+            <input type="password" id="password" placeholder="Password" />
+          </div>
           <button type="submit">Login</button>
           <div id="error"></div>
         </form>
@@ -32,7 +37,6 @@
           <span> Don't have an account? </span>
           <a href="signup.html">Sign up</a>
         </div>
-
       </div>
     </div>
     <script src="login.js"></script>
