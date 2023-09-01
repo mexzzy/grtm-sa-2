@@ -4,6 +4,7 @@ const openIcon = document.getElementById("openIcon");
 const closeIcon = document.getElementById("closeIcon");
 const loginBtn = document.getElementById("loginBtn");
 const signupBtn = document.getElementById("signupBtn");
+const getStarted = document.getElementById("getStarted");
 toggle.addEventListener("click", function () {
   toggleCheck();
 });
@@ -34,5 +35,8 @@ loginBtn.addEventListener("click", function() {
   document.location.href = "login.html";
 });
 signupBtn.addEventListener("click", () => {
+  document.location.href = "signup.html";
+});
+getStarted.addEventListener("click", () => {
   document.location.href = "signup.html";
 });
