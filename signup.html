@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AfriCash Signup</title>
+    <link rel="stylesheet" href="signup.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="logo">
+          <img src="africash logo.png" alt="" /> <span>Africash</span>
+        </div>
+        <div class="mainWrapper">
+          <div class="text">
+            <span>SIGN UP</span>
+          </div>
+          <form id="sign-up-form">
+            <div class="signup-container">
+              <div class="signup-container1">
+                <input type="text" id="fullName" required placeholder="Full name" />
+                <input type="text" id="username" required placeholder="Username" />
+              </div>
+              <div class="signup-container2">
+                <input type="text" id="email" required placeholder="Email Address" />
+                <input type="number" id="phoneNumber" required placeholder="Phone Number" />
+              </div>
+              <div class="signup-container3">
+                <input type="password" id="password" required placeholder="Password" />
+                <input
+                  type="password"
+                  required
+                  placeholder="Confirm Password"
+                  id="confirmPassword"
+                />
+              </div>
+            </div>
+            <div class="terms-and-conditions">
+              <input id="checkbox" type="checkbox" required />
+              <label for="checkbox">Terms and conditions</span>
+            </div>
+            <div class="signup">
+              <button type="submit">sign up</button>
+            </div>
+            <div id="error"></div>
+          </form>
+        </div>
+        <div class="loginResponse">
+          <span>Already have an account? <a href="login.html">Login</a></span>
+        </div>
+      </div>
+    </div>
+    <script src="signup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AfriCash Dashboard</title>
+    <link rel="stylesheet" href="africash-style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-thin-straight/css/uicons-thin-straight.css"
+    />
+  </head>
+  <body>
+    <div id="dashboardCover" class="dashFlex">
+      <div class="dashNav">
+        <div class="logoContainer">
+          <img src="logo.png" alt="" />
+          <span>africash</span>
+        </div>
+        <div class="mainNavFlex">
+          <div class="mainNavbarContainer">
+            <div class="navbarList" id="homeBtn">
+              <i class="fi fi-rr-house-blank"></i>
+              <span>dashboard</span>
+            </div>
+            <div class="navbarList" id="walletBtn">
+              <i class="fi fi-rr-wallet"></i>
+              <span>wallet</span>
+            </div>
+            <div class="navbarList" id="savingsBtn">
+              <i class="fi fi-rr-piggy-bank"></i>
+              <span>savings</span>
+            </div>
+            <div class="navbarList" id="openProfilePage">
+              <i class="fi fi-rr-user"></i>
+              <span>profile</span>
+            </div>
+          </div>
+          <div style="padding: 10px" class="navbarList disable" id="logout">
+            <i class="fi fi-rr-sign-out-alt"></i>
+            <span>logout</span>
+          </div>
+        </div>
+      </div>
+      <div class="dashDisplay">
+        <!-- fixed display navbar -->
+        <div class="fixedDisplayNavbar">
+          <div class="fixedProfile" id="openProfilePage2">
+            <img src="default profile.jpg" alt="" />
+            <div class="details">
+              <span>Hi, <span id="username"></span></span>
+              <span>let's make payments</span>
+            </div>
+          </div>
+          <div class="changeableNaming">
+            <span id="pageName">dashboard</span>
+            <span></span>
+          </div>
+          <div class="notifyIcon">
+            <i class="fi fi-rr-bell"></i>
+          </div>
+        </div>
+
+        <!-- home page -->
+        <div class="homePage" id="homePage">
+          <!--  -->
+          <div class="mainBalanceFlex">
+            <div class="balanceCardMain">
+              <div class="top_1">
+                <div class="balance">
+                  <span>total balance</span>
+                  <span style="display: flex; gap: 5px"
+                    >$
+                    <div id="mainBalance">25,600.40</div></span
+                  >
+                </div>
+                <div id="toggleBalance" class="viewBalance">
+                  <i id="hideBalance" class="fi fi-rs-crossed-eye"></i>
+                  <i id="showBalance" class="fi fi-rr-eye"></i>
+                </div>
+              </div>
+              <div class="top_2">
+                <span id="walletBtnAdd2">my wallets</span>
+                <i class="fi fi-rr-arrow-small-right"></i>
+              </div>
+            </div>
+            <div class="addBalanceCardMain disable" id="walletBtnAdd">
+              <i class="fi fi-sr-square-plus"></i>
+              <span>add wallet</span>
+            </div>
+          </div>
+          <div class="optionAndStatusFlex">
+            <div class="optionWrapper">
+              <div class="optionList">
+                <i class="fi fi-sr-plus"></i>
+                <span>add</span>
+              </div>
+              <div class="optionList">
+                <i class="fi fi-bs-arrow-up-right"></i>
+                <span>send</span>
+              </div>
+              <div class="optionList">
+                <i class="fi fi-rs-money-from-bracket"></i>
+                <span>withdraw</span>
+              </div>
+            </div>
+            <div class="statusWrapper">
+              <div class="incomeWrapper">
+                <i class="fi fi-ts-arrow-small-down"></i>
+                <div class="income">
+                  <span>income</span>
+                  <span>$15,000.98</span>
+                </div>
+              </div>
+              <div class="outcomeWrapper">
+                <i class="fi fi-ts-arrow-small-up"></i>
+                <div class="income">
+                  <span>outcome</span>
+                  <span>-$15,000.98</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="earningWrapper">
+            <div class="earningHeader">
+              <div class="title">earnings</div>
+              <span>see all</span>
+            </div>
+
+            <div class="earningContainer">
+              <div class="earningList eColorR">
+                <span>a</span>
+                <span>adam</span>
+                <span>$2,050</span>
+              </div>
+              <div class="earningList eColorO">
+                <span>j</span>
+                <span>Joyce</span>
+                <span>$200</span>
+              </div>
+              <div class="earningList eColorB">
+                <span>m</span>
+                <span>maxwell</span>
+                <span>$1,750</span>
+              </div>
+              <div class="earningList eColorG">
+                <span>j</span>
+                <span>john</span>
+                <span>$500</span>
+              </div>
+              <div class="earningList eColorY">
+                <span>o</span>
+                <span>oscar</span>
+                <span>$3,780</span>
+              </div>
+              <div class="earningList eColorR">
+                <span>f</span>
+                <span>faith</span>
+                <span>$590</span>
+              </div>
+            </div>
+          </div>
+          <div class="expenditures">
+            <div class="title">expenditures</div>
+            <div class="scrollable">
+              <div class="expendituresContainer">
+                <div class="expenditureList">
+                  <div class="mainFlex">
+                    <span class="flex">
+                      <span>car</span>
+                      <i class="fi fi-ts-angle-small-right"></i>
+                    </span>
+                    <div class="amount">$500</div>
+                  </div>
+                  <div class="statusBar">
+                    <div></div>
+                    <div></div>
+                  </div>
+                  <span class="percent">60%</span>
+                </div>
+                <div class="expenditureList">
+                  <div class="mainFlex">
+                    <span class="flex">
+                      <span>car</span>
+                      <i class="fi fi-ts-angle-small-right"></i>
+                    </span>
+                    <div class="amount">$500</div>
+                  </div>
+                  <div class="statusBar">
+                    <div></div>
+                    <div></div>
+                  </div>
+                  <span class="percent">60%</span>
+                </div>
+                <div class="expenditureList">
+                  <div class="mainFlex">
+                    <span class="flex">
+                      <span>car</span>
+                      <i class="fi fi-ts-angle-small-right"></i>
+                    </span>
+                    <div class="amount">$500</div>
+                  </div>
+                  <div class="statusBar">
+                    <div></div>
+                    <div></div>
+                  </div>
+                  <span class="percent">60%</span>
+                </div>
+                <div class="expenditureList">
+                  <div class="mainFlex">
+                    <span class="flex">
+                      <span>car</span>
+                      <i class="fi fi-ts-angle-small-right"></i>
+                    </span>
+                    <div class="amount">$500</div>
+                  </div>
+                  <div class="statusBar">
+                    <div></div>
+                    <div></div>
+                  </div>
+                  <span class="percent">60%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="gap"></div>
+          <br />
+          <br />
+          <!--  -->
+          <br />
+          <br />
+        </div>
+
+        <!-- wallet page -->
+        <div class="walletPage" id="walletPage">
+          <div class="scrollable">
+            <div class="walletContainerMainFlex">
+              <div class="addEmptyCard">
+                <i class="fi fi-sr-add"></i>
+              </div>
+              <div class="cardTwo">
+                <span class="totalBalance">
+                  <div class="flex">
+                    <span>total balance</span>
+                    <span>$10,000.40</span>
+                  </div>
+                  <div class="icons">
+                    <i class="fi fi-br-circle"></i>
+                    <i class="fi fi-ss-circle"></i>
+                    <i class="fi fi-br-circle"></i>
+                    <i class="fi fi-ss-circle"></i>
+                  </div>
+                </span>
+                <span class="cardNum">1234 **** **** 3456</span>
+                <div class="cardDetails">
+                  <div class="cardL">
+                    <span>name</span>
+                    <span id="fullName"></span>
+                  </div>
+                  <div class="cardL">
+                    <span>exp</span>
+                    <span>04/07/2027</span>
+                  </div>
+                </div>
+              </div>
+              <div class="cardTwo">
+                <span class="totalBalance">
+                  <div class="flex">
+                    <span>total balance</span>
+                    <span>$15,600.00</span>
+                  </div>
+                  <div class="icons">
+                    <i class="fi fi-br-circle"></i>
+                    <i class="fi fi-ss-circle"></i>
+                    <i class="fi fi-br-circle"></i>
+                    <i class="fi fi-ss-circle"></i>
+                  </div>
+                </span>
+                <span class="cardNum">5556 **** **** 5496</span>
+                <div class="cardDetails">
+                  <div class="cardL">
+                    <span>name</span>
+                    <span id="fullName2"></span>
+                  </div>
+                  <div class="cardL">
+                    <span>exp</span>
+                    <span>17/08/2025</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="transactionWrapper">
+            <div class="transactionHeader">
+              <div class="title">transactions</div>
+              <i class="fi fi-sr-settings-sliders"></i>
+            </div>
+            <div class="transactionNamingTitle">
+              <span>*</span>
+              <span>name</span>
+              <span>what for</span>
+              <span>amount</span>
+              <span>status</span>
+              <span>date</span>
+            </div>
+            <div class="transactionDetailsContainer">
+              <div class="transactionDetailsList">
+                <span>
+                  <img src="spotify icon.png" alt="" />
+                </span>
+                <span>spotify</span>
+                <span>subscription fee</span>
+                <span class="transactionRed">-$50.00</span>
+                <span class="transactionGreen">successful</span>
+                <span>03/09/2023</span>
+              </div>
+              <div class="transactionDetailsList">
+                <span>
+                  <img src="apple_logo_.webp" alt="" />
+                </span>
+                <span>apple</span>
+                <span>subscription fee</span>
+                <span class="transactionRed">-$75.00</span>
+                <span class="transactionGreen">successful</span>
+                <span>03/09/2023</span>
+              </div>
+              <div class="transactionDetailsList">
+                <span>
+                  <img src="spotify icon.png" alt="" />
+                </span>
+                <span>spotify</span>
+                <span>subscription fee</span>
+                <span class="transactionRed">-$50.00</span>
+                <span class="transactionGreen">successful</span>
+                <span>03/09/2023</span>
+              </div>
+              <div class="transactionDetailsList">
+                <span>
+                  <img src="apple_logo_.webp" alt="" />
+                </span>
+                <span>apple</span>
+                <span>subscription fee</span>
+                <span class="transactionRed">-$75.00</span>
+                <span class="transactionGreen">successful</span>
+                <span>03/09/2023</span>
+              </div>
+              <div class="transactionDetailsList">
+                <span>
+                  <img src="spotify icon.png" alt="" />
+                </span>
+                <span>spotify</span>
+                <span>subscription fee</span>
+                <span class="transactionRed">-$50.00</span>
+                <span class="transactionGreen">successful</span>
+                <span>03/09/2023</span>
+              </div>
+              <div class="transactionDetailsList">
+                <span>
+                  <img src="apple_logo_.webp" alt="" />
+                </span>
+                <span>apple</span>
+                <span>subscription fee</span>
+                <span class="transactionRed">-$75.00</span>
+                <span class="transactionGreen">successful</span>
+                <span>03/09/2023</span>
+              </div>
+            </div>
+          </div>
+          <br />
+          <br />
+          <br />
+          <div class="gap"></div>
+          <!--  -->
+        </div>
+
+        <!-- savings page -->
+        <div class="savingsPage" id="savingsPage">
+          <div class="savingsContainer">
+            <div class="savingsCardList GrDSavingsBgBlue">
+              <div class="itemName">
+                <span>iphone 13 pro</span>
+              </div>
+              <div class="itemDetails">
+                <div class="balance">
+                  <span>balance</span>
+                  <span>70%</span>
+                </div>
+                <div class="statusBar">
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="duration">
+                  <span>$420 of $600</span>
+                  <span>14 days left</span>
+                </div>
+                <span style="font-size: 12px; color: rgba(0, 0, 0, 0.767)">
+                  see details
+                </span>
+              </div>
+            </div>
+            <div class="savingsCardList GrDSavingsBgPink">
+              <div class="itemName">
+                <span>car</span>
+              </div>
+              <div class="itemDetails">
+                <div class="balance">
+                  <span>balance</span>
+                  <span>70%</span>
+                </div>
+                <div class="statusBar">
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="duration">
+                  <span>$420 of $600</span>
+                  <span>14 days left</span>
+                </div>
+                <span style="font-size: 12px; color: rgba(0, 0, 0, 0.767)">
+                  see details
+                </span>
+              </div>
+            </div>
+            <div class="savingsCardList GrDSavingsBgGreen">
+              <div class="itemName">
+                <span>house</span>
+              </div>
+              <div class="itemDetails">
+                <div class="balance">
+                  <span>balance</span>
+                  <span>70%</span>
+                </div>
+                <div class="statusBar">
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="duration">
+                  <span>$420 of $600</span>
+                  <span>14 days left</span>
+                </div>
+                <span style="font-size: 12px; color: rgba(0, 0, 0, 0.767)">
+                  see details
+                </span>
+              </div>
+            </div>
+            <div class="savingsCardList GrDSavingsBgYellow">
+              <div class="itemName">
+                <span>school</span>
+              </div>
+              <div class="itemDetails">
+                <div class="balance">
+                  <span>balance</span>
+                  <span>70%</span>
+                </div>
+                <div class="statusBar">
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="duration">
+                  <span>$420 of $600</span>
+                  <span>14 days left</span>
+                </div>
+                <span style="font-size: 12px; color: rgba(0, 0, 0, 0.767)">
+                  see details
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="gap gapSave"></div>
+          <br />
+          <br />
+          <!--  -->
+        </div>
+      </div>
+    </div>
+    <div class="profileCoverContainer" id="profilePage">
+      <div class="profileWrapper">
+        <div class="empty"><i class="fi fi-rs-cross" id="closeProfilePage"></i></div>
+        <div class="heroName">
+          <span id="nameFL"></span>
+          <span id="fullName3"></span>
+        </div>
+        <div class="profileDetailContainer">
+          <span class="infoTitle">Profile Info</span>
+          <div class="profileDetails">
+            <div class="profileDetailsList">
+              <span>username</span>
+              <span id="username2"></span>
+            </div>
+            <div class="profileDetailsList">
+              <span >full name</span>
+              <span id="fullName4"></span>
+            </div>
+            <div class="profileDetailsList">
+              <span>email</span>
+              <span id="email"></span>
+            </div>
+            <div class="profileDetailsList">
+              <span>phone number</span>
+              <span id="phoneNumber">none</span>
+            </div>
+            <div class="logout" id="logoutProfile">
+              <i class="fi fi-rr-sign-out-alt"></i>
+              <span>logout</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- script -->
+    <script src="africash.js"></script>
+  </body>
+</html>

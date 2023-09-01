@@ -55,12 +55,14 @@ header {
   border: 1px solid #068353;
   background-color: white;
   padding: 5px 10px;
+  cursor: pointer;
 }
 .btnContainer button:nth-child(2) {
   color: white;
   background-color: #068353;
   border: 0;
   padding: 5px 10px;
+  cursor: pointer;
 }
 .introText .intro {
   font-size: 25px;
