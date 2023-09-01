@@ -12,9 +12,9 @@ loginForm.addEventListener("submit", function (event) {
     if (userData.password === password && userData.email === email) {
       error.innerHTML = "login successful";
       error.style.color = "#068353";
-      localStorage.setItem('loggedIn', 'true');
-      localStorage.setItem('loggedInUsername', username);
-      document.location.href = "africash-dashboard.html"
+      localStorage.setItem("loggedIn", "true");
+      localStorage.setItem("loggedInUsername", username);
+      document.location.href = "africash-dashboard.html";
     } else {
       error.innerHTML = "incorrect credentials";
       error.style.color = "#830606";
@@ -24,3 +24,30 @@ loginForm.addEventListener("submit", function (event) {
     error.style.color = "#830606";
   }
 });
+
+const eyeToggle = document.getElementById("eyeToggle");
+const hideToggle = document.getElementById("hideToggle");
+const showPassword = document.getElementById("showPassword");
+
+eyeToggle.addEventListener("click", () => {
+  eyeMainToggle();
+  console.log("clickeddd");
+});
+let isEye = true;
+function eyeMainToggle() {
+  if (isEye) {
+    showPassword();
+  } else {
+    hidePassword();
+  }
+}
+function showPassword() {
+  const password = document.getElementById("password").value;
+  password.type = Text;
+  isEye = false;
+}
+function hidePassword() {
+  const password = document.getElementById("password").value;
+  password.type = password;
+  isEye = true;
+}
