@@ -14,7 +14,9 @@ header {
 #toggle, #closeIcon {
   display: none;
 }
-
+#getStarted{
+  cursor: pointer;
+}
 .mainlogo {
   display: flex;
   align-items: center;
