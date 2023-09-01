@@ -24,29 +24,3 @@ loginForm.addEventListener("submit", function (event) {
   }
 });
 
-// const eyeToggle = document.getElementById("eyeToggle");
-// const hideToggle = document.getElementById("hideToggle");
-// const showPassword = document.getElementById("showPassword");
-
-// eyeToggle.addEventListener("click", () => {
-//   eyeMainToggle();
-//   console.log("clickeddd");
-// });
-// let isEye = true;
-// function eyeMainToggle() {
-//   if (isEye) {
-//     showPassword();
-//   } else {
-//     hidePassword();
-//   }
-// }
-function showPassword() {
-  const password = document.getElementById("password").value;
-  password.type = Text;
-  isEye = false;
-}
-function hidePassword() {
-  const password = document.getElementById("password").value;
-  password.type = password;
-  isEye = true;
-}
