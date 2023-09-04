@@ -3,6 +3,9 @@
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
+a{
+  color: #068353;
+}
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -64,13 +67,11 @@
 .text span {
   font-size: smaller;
   display: flex;
-  /* padding-right: 100px; */
   padding-top: 10px;
 }
 .passwordFlex {
   display: flex;
   gap: 5px;
-
 }
 #eyeToggle {
   background-color: #88888890;
@@ -81,4 +82,7 @@
   cursor: pointer;
   padding: 10px;
   justify-content: center;
+}
+#hidePassword{
+  display: none;
 }
