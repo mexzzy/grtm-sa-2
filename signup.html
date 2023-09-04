@@ -13,6 +13,14 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css"
+  />
+  <link
+  rel="stylesheet"
+  href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+/>
   </head>
   <body>
     <div class="container">
@@ -35,14 +43,22 @@
                 <input type="number" id="phoneNumber" required placeholder="Phone Number" />
               </div>
               <div class="signup-container3">
-                <input type="password" id="password" required placeholder="Password" />
-                <input
-                  type="password"
-                  required
-                  placeholder="Confirm Password"
-                  id="confirmPassword"
-                />
-              </div>
+                <div class="passwordFlex">
+                  <input type="password" id="passwordId" placeholder="Password" />
+                  <div id="eyeToggle">
+                    <i id="hidePassword" class="fi fi-rs-crossed-eye"></i>
+                    <i id="showPassword" class="fi fi-rr-eye"></i>
+                  </div>
+                </div>
+                <div class="passwordFlex">
+                  <input type="password" id="confirmPassword" placeholder="confirmPassword" />
+                  <div id="eyeToggle2">
+                    <i id="hidePassword2" class="fi fi-rs-crossed-eye"></i>
+                    <i id="showPassword2" class="fi fi-rr-eye"></i>
+                  </div>
+                </div>
+              
+              
             </div>
             <div class="terms-and-conditions">
               <input id="checkbox" type="checkbox" required />
@@ -56,6 +72,13 @@
         </div>
         <div class="loginResponse">
           <span>Already have an account? <a href="login.html">Login</a></span>
+        </div>
+        <div id="signUpWrapper">
+          <div class="signupPopUp">
+            <span>Signup Successful ✅.</span>
+            <button id="loginPopup">login</button>
+          </div>
+          <i class="fi fi-rs-cross" id="closePopUp"></i>
         </div>
       </div>
     </div>

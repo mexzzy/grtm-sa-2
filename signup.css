@@ -3,6 +3,9 @@
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
+a{
+  color: #068353;
+}
 .container {
   display: flex;
   justify-content: center;
@@ -79,7 +82,74 @@
 .loginResponse {
   margin-top: 10px;
 }
+#signUpWrapper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.552);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  display: none;
+  gap: 20px;
+}
+#signUpWrapper i{
+  background-color: #ffffffb0;
+  padding: 10px 10px 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.signupPopUp{
+  height: 30vh;
+  width: 20%;
+  border-radius:10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  text-transform: capitalize;
+  padding: 20px;
+  background-color: #fff;
+}
+.signupPopUp button{
+  background-color: #068353;
+  text-transform: capitalize;
+  padding: 10px 20px;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 1px 1px 5px 1px #0000005f;
+  border-radius: 10px;
+  color: #fff;
+}
+.passwordFlex {
+  display: flex;
+  gap: 5px;
+}
+#eyeToggle, #eyeToggle2 {
+  background-color: #88888890;
+  width: fit-content;
+  display: flex;
+  border-radius: 7px;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  justify-content: center;
+}
+#hidePassword, #hidePassword2{
+  display: none;
+}
+
+
 @media (max-width: 768px) {
+  .signupPopUp{
+    
+    width: 70%;
+  }
   .signup-container1,
   .signup-container2,
   .signup-container3 {
