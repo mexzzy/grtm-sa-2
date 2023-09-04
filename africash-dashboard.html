@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AfriCash Dashboard</title>
     <link rel="stylesheet" href="africash-style.css" />
-    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -119,8 +119,18 @@
                 </div>
               </div>
               <div class="top_2">
-                <span id="walletBtnAdd2">my wallets</span>
-                <i class="fi fi-rr-arrow-small-right"></i>
+                <div class="optionWrapper">
+                  <div class="optionList">
+                    <i class="fi fi-rs-inbox-in"></i>
+                    <span>receive</span>
+                  </div>
+                  <div class="optionList">
+                    <i class="fi fi-rs-inbox-out"></i>
+                    <span>send</span>
+                  </div>
+                </div>
+                <span id="walletBtnAdd2">my wallets<i class="fi fi-rr-arrow-small-right"></i></span>
+                
               </div>
             </div>
             <div class="addBalanceCardMain disable" id="walletBtnAdd">
@@ -129,20 +139,7 @@
             </div>
           </div>
           <div class="optionAndStatusFlex">
-            <div class="optionWrapper">
-              <div class="optionList">
-                <i class="fi fi-sr-plus"></i>
-                <span>add</span>
-              </div>
-              <div class="optionList">
-                <i class="fi fi-bs-arrow-up-right"></i>
-                <span>send</span>
-              </div>
-              <div class="optionList">
-                <i class="fi fi-rs-money-from-bracket"></i>
-                <span>withdraw</span>
-              </div>
-            </div>
+           
             <div class="statusWrapper">
               <div class="incomeWrapper">
                 <i class="fi fi-ts-arrow-small-down"></i>
@@ -304,7 +301,9 @@
                 <div class="cardDetails">
                   <div class="cardL">
                     <span>name</span>
-                    <span id="fullName"></span>
+                    <span>
+                      <span id="fullName"></span>
+                    </span>
                   </div>
                   <div class="cardL">
                     <span>exp</span>
@@ -329,7 +328,9 @@
                 <div class="cardDetails">
                   <div class="cardL">
                     <span>name</span>
-                    <span id="fullName2"></span>
+                    <span>
+                      <span id="fullName2"></span>
+                    </span>
                   </div>
                   <div class="cardL">
                     <span>exp</span>
@@ -523,7 +524,9 @@
     </div>
     <div class="profileCoverContainer" id="profilePage">
       <div class="profileWrapper">
-        <div class="empty"><i class="fi fi-rs-cross" id="closeProfilePage"></i></div>
+        <div class="empty">
+          <i class="fi fi-rs-cross" id="closeProfilePage"></i>
+        </div>
         <div class="heroName">
           <span id="nameFL"></span>
           <span id="fullName3"></span>
@@ -536,7 +539,7 @@
               <span id="username2"></span>
             </div>
             <div class="profileDetailsList">
-              <span >full name</span>
+              <span>full name</span>
               <span id="fullName4"></span>
             </div>
             <div class="profileDetailsList">

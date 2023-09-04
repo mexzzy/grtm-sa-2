@@ -175,11 +175,11 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  justify-content: end;
+  flex-direction: column;
   text-transform: capitalize;
 }
-.balanceCardMain .top_2 span,
-.balanceCardMain .top_2 i {
+.balanceCardMain .top_2 #walletBtnAdd2,
+.balanceCardMain .top_2 #walletBtnAdd2 i {
   cursor: pointer;
   color: #fff;
 }
@@ -210,21 +210,20 @@
   align-items: center;
   gap: 2%;
   justify-content: space-around;
-  width: 40%;
+  width: 100%;
 }
 .optionList {
-  padding: 10px;
+  padding: 5px;
   display: flex;
   align-items: center;
   text-transform: capitalize;
   border-radius: 5px;
   background-color: #068353;
   cursor: pointer;
-  width: fit-content;
+  width: 100%;
   flex-direction: column;
   color: #fff;
   justify-content: center;
-  width: 50px;
 }
 .optionList span {
   font-size: 12px;
@@ -429,6 +428,8 @@
 }
 .walletContainerMainFlex .cardTwo .cardDetails .cardL span:nth-child(2) {
   font-weight: 600;
+  overflow-x: scroll;
+  width: 100%;
   color: #000000a1;
 }
 
@@ -693,14 +694,17 @@ border-radius: 5px;
   .balanceCardMain {
     width: 89%;
   }
+  .balanceCardMain  .top_1{
+    gap:  10px;
+  }
   .optionWrapper {
-    width: 89%;
-    gap: 0;
+    width: 100%;
+    gap: 10px;
   }
   .optionWrapper .optionList {
     flex-direction: row;
     gap: 10px;
-    width: auto;
+    width: 100%;
   }
   .optionAndStatusFlex {
     flex-direction: column;
