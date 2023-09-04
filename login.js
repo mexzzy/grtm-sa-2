@@ -8,7 +8,7 @@ loginForm.addEventListener("submit", function (event) {
   const storedUserData = localStorage.getItem(username);
   if (storedUserData) {
     const userData = JSON.parse(storedUserData);
-    if (userData.password === passwordId) {
+    if (userData.passwordId === passwordId) {
       error.innerHTML = "login successful";
       error.style.color = "#068353";
       localStorage.setItem("loggedIn", "true");
